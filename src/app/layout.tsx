@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+export const viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
   title: "LG Remote",
   description: "Premium LG webOS Remote Web App",
@@ -9,8 +17,6 @@ export const metadata: Metadata = {
     title: "LG Remote",
     statusBarStyle: "black-translucent",
   },
-  themeColor: "#000000",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
 };
 
 export default function RootLayout({
